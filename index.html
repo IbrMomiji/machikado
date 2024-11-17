@@ -68,6 +68,7 @@
          <link rel="icon" type="image/png" sizes="32x32" href="contents/favicon/icon-32x32.png">
          <link rel="manifest" href="manifest.json">
         <!-- =============== SCRIPTS =============== -->
+         <script src="upup.min.js"></script>
          <script src="themes/plugins/sweetalert2/sweetalert2.all.min.js"></script>
          <script src="themes/plugins/jquery-3.7.1/jquery-3.7.1.js"></script>
          <script src="themes/plugins/scrollgress/scrollgress.min.2.0.0.js"></script>
@@ -110,6 +111,9 @@
             </nav>
         </header>
         <!-- ================= MAIN ================ -->
+        <script>
+            UpUp.start({ 'content-url': 'offline.index.html', 'assets': ['themes/offline/main.css', 'themes/offline/main.js'] });
+        </script>
         <main>
             <section class="scroll-point" id="area-1">
                 <h1 style="font-size:150px;"><span class="bgextend bgDUextendTrigger"><span class="bgappearTrigger">Test Web Site<br><a class="ip-address"></a></span></span></h1>
