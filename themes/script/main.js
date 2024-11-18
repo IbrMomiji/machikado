@@ -1,6 +1,6 @@
 const ts = performance.now();
 /* ======================== TEST ======================== */
-console.log("%c見ないで", "font-size:100px; color:red;");
+console.warn("%c見ないで", "font-size:100px; color:red;");
 console.assert(document.getElementById("debug"), "'debug'IDはありません"); 
 /* ================= IE user Redirect =================== */
 var userAgent = window.navigator.userAgent.toLowerCase();

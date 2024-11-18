@@ -2,7 +2,7 @@
 /* スクロールに応じて線を表示する */
 /* ================================================ */
 $('main').scrollgress({
-    height: '2px',
+    height: '5px',
     color: '#990000',
 });
 /* ================================================ */
@@ -54,7 +54,7 @@ $.scrollify({
     before:function(i,panels) {
     var ref = panels[i].attr("data-url");
     $(".pagination .active").removeClass("active");
-    $(".pagination").find("a[href=\"#" + ref + "\"]").addClass("active");
+    $(".pagination").find("a[href=\"?" + ref + "\"]").addClass("active");
     },
     afterRender:function() {
     var pagination = "<ul class=\"pagination\">";
@@ -64,7 +64,7 @@ $.scrollify({
     if(i===$.scrollify.currentIndex()) {
     activeClass = "active";
     }
-    pagination += "<li><a class=\"" + activeClass + "\" href=\"#" + $(this).attr("data-url") + "\"><span class=\"hover-text\">" + $(this).attr("data-url").charAt(0).toUpperCase() + $(this).attr("data-url").slice(1) + "</span></a></li>";
+    pagination += "<li><a class=\"" + activeClass + "\" href=\"?" + $(this).attr("data-url") + "\"><span class=\"hover-text\">" + $(this).attr("data-url").charAt(0).toUpperCase() + $(this).attr("data-url").slice(1) + "</span></a></li>";
     });
     pagination += "</ul>";
     

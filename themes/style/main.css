@@ -17,3 +17,7 @@ body { margin: 0; }
 ::-webkit-scrollbar-thumb {
     background: #323232;
 }
+
+/*  */
+#area-1 { background-color:antiquewhite; }
+#area-3 { background-color: antiquewhite; }
