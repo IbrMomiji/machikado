@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja" contenteditable="false">
+<html lang="ja" contenteditable="false" onContextmenu="return false;">
     <head prefix="og: https://ogp.me/ns#">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -79,6 +79,7 @@
          <script src="themes/script/text.js" charset="utf-8"></script>
     </head>
     <body>
+        <language initial="ja" lang="ja,en"></language>
         <!-- =============== NOSCRIPT ============== -->
         <noscript>
             <p id="nos-only">スデ稿瞀ガトプリクスバャジ蔚㡡</p>
@@ -104,10 +105,15 @@
         <header id="header">
             <nav id="g-nav">
               <ul>
-                <li><a href="#area-1">ホーム</a></li>
-                <li><a href="#area-2">自己紹介</a></li>
-                <li><a href="#area-3">ご案内</a></li>
-                <li><a href="#area-4">FAQ</a></li>
+                <li><a href="#home" class="lang" language="ja">ホーム</a></li>
+                <li><a href="#intro" class="lang" language="ja">自己紹介</a></li>
+                <li><a href="#guidance" class="lang" language="ja">ご案内</a></li>
+                <li><a href="#faq" class="lang" language="ja">FAQ</a></li>
+
+                <li><a href="#home" class="lang" language="en">Home</a></li>
+                <li><a href="#intro" class="lang" language="en">Introduction</a></li>
+                <li><a href="#guidance" class="lang" language="en">Guidance</a></li>
+                <li><a href="#faq" class="lang" language="en">FAQ</a></li>
               </ul>
             </nav>
         </header>
@@ -116,20 +122,22 @@
             UpUp.start({ 'content-url': 'offline.index.html', 'assets': ['themes/offline/main.css', 'themes/offline/main.js'] });
         </script>
         <main>
-            <section class="scroll-point" id="area-1" data-url="TOP">
+            <section class="scroll-point" id="home" data-url="TOP">
                 <!-- <h1 class="h1-top"><span class="bgextend bgDUextendTrigger"><span class="bgappearTrigger">Test Web Site<br><a class="ip-address"></a></span></span></h1> -->
                 <h2>ホーム</h2>
-                <p>developer</p>
+                <a class="language" href="?lang=ja">日本語に切り替え</a>
+                <a class="language" href="?lang=en">英語に切り替え</a>
+                <p></p>
             </section>
-            <section class="scroll-point" id="area-2" data-url="INTRO">
+            <section class="scroll-point" id="intro" data-url="INTRO">
                 <h2>自己紹介</h2>
                 <p>developer</p>
             </section>
-            <section class="scroll-point" id="area-3" data-url="GUIDANCE">
+            <section class="scroll-point" id="guidance" data-url="GUIDANCE">
                 <h2>ご案内</h2>
                 <p>developer</p>
             </section>
-            <section class="scroll-point" id="area-4" data-url="FAQ">
+            <section class="scroll-point" id="faq" data-url="FAQ">
                 <h2>FAQ</h2>
                 <p>developer</p>
             </section>

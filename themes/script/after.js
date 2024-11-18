@@ -2,7 +2,7 @@
 /* スクロールに応じて線を表示する */
 /* ================================================ */
 $('main').scrollgress({
-    height: '5px',
+    height: '3px',
     color: '#990000',
 });
 /* ================================================ */
@@ -97,4 +97,47 @@ $('#page-top').click(function () {
         scrollTop: 0
     }, 1500,"easeInOutQuint");
     return false;
+});
+
+/* lang */
+
+let Language,langdata;
+$(window).on("load", function(){
+    Language = $("language").attr("initial");
+    langdata = $("language").attr("lang").split(",");
+    langmain(0);
+});
+function langmain(time){
+    this.main = function(){
+        url = location.href;
+        if(url.match("?lang=")){
+            for(i in langdata){
+                if(langdata[i].indexOf(url.split("?lang=")[1]) >= 0){
+                    Language = url.split("?lang=")[1];
+                    $(".lang").each(function(i) {
+                        lang = $(this).attr("language");
+                        if(lang == Language) {
+                            $(this).show();
+                        } else {
+                            $(this).hide();
+                        }
+                    });
+                }
+            }
+        } else {
+        
+            $(".lang").each(function(i) {
+                lang = $(this).attr("language");
+                if(lang == Language) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            });
+        }
+    }
+    setTimeout(this.main, time);
+}
+$(".language").on("click", function(){
+    langmain(1000);
 });
