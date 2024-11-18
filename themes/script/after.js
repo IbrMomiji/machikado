@@ -42,6 +42,38 @@ $(function() {
     $(window).resize(function() { PositionCheck() }); 
 });
 /* ================================================ */
+/* スクロール画面移動 */
+/* ================================================ */
+$.scrollify({
+    section : ".scroll-point",//1ページスクロールさせたいエリアクラス名
+    interstitialSection : "#header,#footer",//ヘッダーフッターを認識し、1ページスクロールさせず表示されるように設定
+    easing: "swing", // 他にもlinearやeaseOutExpoといったjQueryのeasing指定可能
+    scrollSpeed: 300, // スクロール時の速度
+    
+    //以下、ページネーション設定
+    before:function(i,panels) {
+    var ref = panels[i].attr("data-url");
+    $(".pagination .active").removeClass("active");
+    $(".pagination").find("a[href=\"#" + ref + "\"]").addClass("active");
+    },
+    afterRender:function() {
+    var pagination = "<ul class=\"pagination\">";
+    var activeClass = "";
+    $(".scroll-point").each(function(i) {//1ページスクロールさせたいエリアクラス名を指定
+    activeClass = "";
+    if(i===$.scrollify.currentIndex()) {
+    activeClass = "active";
+    }
+    pagination += "<li><a class=\"" + activeClass + "\" href=\"#" + $(this).attr("data-url") + "\"><span class=\"hover-text\">" + $(this).attr("data-url").charAt(0).toUpperCase() + $(this).attr("data-url").slice(1) + "</span></a></li>";
+    });
+    pagination += "</ul>";
+    
+    $("#area-1").append(pagination);//はじめのエリアにページネーションを表示
+    $(".pagination a").on("click",$.scrollify.move);
+    }
+    
+    });
+/* ================================================ */
 /* トップへ戻る */
 /* ================================================ */
 function PageTopAnime() {
