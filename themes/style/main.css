@@ -2,7 +2,7 @@ body { margin: 0; }
 
 #header { z-index:79; }
 
-#footer { text-align: center; margin-top: 20px; }
+#footer1 { text-align: center; margin-top: 20px; }
 
 ::-webkit-scrollbar {
     width: 10px;
