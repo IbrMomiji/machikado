@@ -1,8 +1,24 @@
-body { margin: 0; }
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
 
-#header { z-index:79; }
+#header {
+    z-index: 79;
+}
 
-#footer1 { text-align: center; margin-top: 20px; }
+#hamburgermenu {
+    z-index: 85;
+}
+
+.openbtn {
+    z-index: 86;
+}
+
+#footer1 {
+    text-align: center;
+    margin-top: 20px;
+}
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -11,7 +27,7 @@ body { margin: 0; }
 
 ::-webkit-scrollbar-track {
     /* background: #ffffff; */
-    background: rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.1);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -19,5 +35,10 @@ body { margin: 0; }
 }
 
 /*  */
-#home { background-color:antiquewhite; }
-#guidance { background-color: antiquewhite; }
+#home {
+    background-color: antiquewhite;
+}
+
+#guidance {
+    background-color: antiquewhite;
+}

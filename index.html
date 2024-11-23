@@ -1,173 +1,222 @@
 <!DOCTYPE html>
 <html lang="ja" contenteditable="false" onContextmenu="return false;">
-    <head prefix="og: https://ogp.me/ns#">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="application-name" content="メープルのホームページ">
-        <meta name="author" content="maple">
-        <meta name="description" content="めーぷるのサイトです！ぜひ見ていってね～ 自己紹介などいろいろ書いています！">
-        <meta name="keywords" content="めーぷる,メープル,かえで,もみじ," lang="ja">
-        <!-- =============== OGP TAG =============== -->
-         <meta property="og:title" content="めーぷるのサイト | ホーム">
-         <meta property="og:description" content="めーぷるのサイトです！ぜひ見ていってね～ 自己紹介などいろいろ書いています！">
-         <meta property="og:url" content="">
-         <meta property="og:image" content="https://img3.imepic.jp/image/20241111/757490.png?a2a2dee873a347cca121b4343cf719f2">
-         <meta name="twitter:card" content="summary_large_image">
-        <!-- ================ TITLE ================ -->
-         <title>めーぷるのサイト | ホーム</title>
-        <!-- ============== CSS FILES ============== -->
-         <link rel="stylesheet" href="themes/style/main.css">
-         <link rel="stylesheet" href="themes/style/background.css">
-         <link rel="stylesheet" href="themes/style/contents.css">
-         <link rel="stylesheet" href="themes/style/index/main.css">
 
-         <link href="themes/plugins/sweetalert2/sweetalert2.min.css" rel="stylesheet">
-        <!-- =============== FAVICON =============== -->
-         <meta name="msapplication-square70x70logo" content="contents/favicon/site-tile-70x70.png">
-         <meta name="msapplication-square150x150logo" content="contents/favicon/site-tile-150x150.png">
-         <meta name="msapplication-wide310x150logo" content="contents/favicon/site-tile-310x150.png">
-         <meta name="msapplication-square310x310logo" content="contents/favicon/site-tile-310x310.png">
-         <meta name="msapplication-TileColor" content="#0078d7">
-         <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="contents/favicon/favicon.ico">
-         <link rel="icon" type="image/vnd.microsoft.icon" href="contents/favicon/favicon.ico">
-         <link rel="apple-touch-icon" sizes="57x57" href="contents/favicon/apple-touch-icon-57x57.png">
-         <link rel="apple-touch-icon" sizes="60x60" href="contents/favicon/apple-touch-icon-60x60.png">
-         <link rel="apple-touch-icon" sizes="72x72" href="contents/favicon/apple-touch-icon-72x72.png">
-         <link rel="apple-touch-icon" sizes="76x76" href="contents/favicon/apple-touch-icon-76x76.png">
-         <link rel="apple-touch-icon" sizes="114x114" href="contents/favicon/apple-touch-icon-114x114.png">
-         <link rel="apple-touch-icon" sizes="120x120" href="contents/favicon/apple-touch-icon-120x120.png">
-         <link rel="apple-touch-icon" sizes="144x144" href="contents/favicon/apple-touch-icon-144x144.png">
-         <link rel="apple-touch-icon" sizes="152x152" href="contents/favicon/apple-touch-icon-152x152.png">
-         <link rel="apple-touch-icon" sizes="180x180" href="contents/favicon/apple-touch-icon-180x180.png">
-         <link rel="icon" type="image/png" sizes="36x36" href="contents/favicon/android-chrome-36x36.png">
-         <link rel="icon" type="image/png" sizes="48x48" href="contents/favicon/android-chrome-48x48.png">
-         <link rel="icon" type="image/png" sizes="72x72" href="contents/favicon/android-chrome-72x72.png">
-         <link rel="icon" type="image/png" sizes="96x96" href="contents/favicon/android-chrome-96x96.png">
-         <link rel="icon" type="image/png" sizes="128x128" href="contents/favicon/android-chrome-128x128.png">
-         <link rel="icon" type="image/png" sizes="144x144" href="contents/favicon/android-chrome-144x144.png">
-         <link rel="icon" type="image/png" sizes="152x152" href="contents/favicon/android-chrome-152x152.png">
-         <link rel="icon" type="image/png" sizes="192x192" href="contents/favicon/android-chrome-192x192.png">
-         <link rel="icon" type="image/png" sizes="256x256" href="contents/favicon/android-chrome-256x256.png">
-         <link rel="icon" type="image/png" sizes="384x384" href="contents/favicon/android-chrome-384x384.png">
-         <link rel="icon" type="image/png" sizes="512x512" href="contents/favicon/android-chrome-512x512.png">
-         <link rel="icon" type="image/png" sizes="36x36" href="contents/favicon/icon-36x36.png">
-         <link rel="icon" type="image/png" sizes="48x48" href="contents/favicon/icon-48x48.png">
-         <link rel="icon" type="image/png" sizes="72x72" href="contents/favicon/icon-72x72.png">
-         <link rel="icon" type="image/png" sizes="96x96" href="contents/favicon/icon-96x96.png">
-         <link rel="icon" type="image/png" sizes="128x128" href="contents/favicon/icon-128x128.png">
-         <link rel="icon" type="image/png" sizes="144x144" href="contents/favicon/icon-144x144.png">
-         <link rel="icon" type="image/png" sizes="152x152" href="contents/favicon/icon-152x152.png">
-         <link rel="icon" type="image/png" sizes="160x160" href="contents/favicon/icon-160x160.png">
-         <link rel="icon" type="image/png" sizes="192x192" href="contents/favicon/icon-192x192.png">
-         <link rel="icon" type="image/png" sizes="196x196" href="contents/favicon/icon-196x196.png">
-         <link rel="icon" type="image/png" sizes="256x256" href="contents/favicon/icon-256x256.png">
-         <link rel="icon" type="image/png" sizes="384x384" href="contents/favicon/icon-384x384.png">
-         <link rel="icon" type="image/png" sizes="512x512" href="contents/favicon/icon-512x512.png">
-         <link rel="icon" type="image/png" sizes="16x16" href="contents/favicon/icon-16x16.png">
-         <link rel="icon" type="image/png" sizes="24x24" href="contents/favicon/icon-24x24.png">
-         <link rel="icon" type="image/png" sizes="32x32" href="contents/favicon/icon-32x32.png">
-         <link rel="manifest" href="contents/favicon/manifest.json">
-        <!-- =============== SCRIPTS =============== -->
-         <script src="upup.min.js"></script>
-         <script src="themes/plugins/sweetalert2/sweetalert2.all.min.js"></script>
-         <script src="themes/plugins/jquery-3.7.1/jquery-3.7.1.js"></script>
-         <script src="themes/plugins/scrollgress/scrollgress.min.2.0.0.js"></script>
-         <script src="themes/plugins/scrollify-1.0.21/jquery.scrollify.min.js"></script>
-         <script src="themes/plugins/jquery-easing.1.4.1/jquery.easing.min.js"></script>
+<head prefix="og: https://ogp.me/ns#">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="application-name" content="メープルのホームページ">
+  <meta name="author" content="maple">
+  <meta name="description" content="めーぷるのサイトです！ぜひ見ていってね～ 自己紹介などいろいろ書いています！">
+  <meta name="keywords" content="めーぷる,メープル,かえで,もみじ," lang="ja">
+  <!-- =============== OGP TAG =============== -->
+  <meta property="og:title" content="めーぷるのサイト | ホーム">
+  <meta property="og:description" content="めーぷるのサイトです！ぜひ見ていってね～ 自己紹介などいろいろ書いています！">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="https://img3.imepic.jp/image/20241111/757490.png?a2a2dee873a347cca121b4343cf719f2">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- ================ TITLE ================ -->
+  <title>めーぷるのサイト | ホーム</title>
+  <!-- ============== CSS FILES ============== -->
+  <link rel="stylesheet" href="themes/style/main.css">
+  <link rel="stylesheet" href="themes/style/background.css">
+  <link rel="stylesheet" href="themes/style/contents.css">
+  <link rel="stylesheet" href="themes/style/index/main.css">
 
-         <script src="themes/script/main.js" charset="utf-8"></script>
-         <script src="themes/script/text.js" charset="utf-8"></script>
-    </head>
-    <body>
-        <language initial="ja" lang="ja,en"></language>
-        <!-- =============== NOSCRIPT ============== -->
-        <noscript>
-            <p id="nos-only">スデ稿瞀ガトプリクスバャジ蔚㡡</p>
-            <style> #nos-only { font-family: serif; font-style: oblique; background-color: yellow; font-size: 30px; font-variant:small-caps; } </style>
-            <div id="nos-ban">閲覧禁止<p id="true">今スグ有効ニスルベキ</p></div>
-            <style>
-                @font-face { font-family: "大正略字"; src: local("contents/fonts/taisyoRyakuji.ttf") format("ttf");  }
-                #nos-ban {
-                    font-family: "大正略字"; position: fixed;
-                    top: 50%; right: 0;
-                    transform: translateY(-50%); writing-mode: vertical-rl;
-                    text-orientation: upright; font-size: clamp(150px, 5vw, 10px ); color: rgb(207, 0, 0); }
-                    #true {
-                    font-family: "大正略字"; position: top;
-                    top: 50%; right: 0;
-                    transform: translateY(50%); writing-mode: vertical-rl;
-                    text-orientation: upright; font-size: clamp(80px, 3vw, 8px); color: rgb(187, 11, 11); }
-            </style>
-            <p class="reverse">ジャバスクリプトヲ有効ニシナケレバ<br>コノウェブサイトヲ閲覧サセル事ハデキマセン。<br>マタ、インターネットエクスプローラーデハ接続ハデキマセン。<br>問題アリマセン。<br>リダイレクトサレマス。</p>
-            <style>.reverse { unicode-bidi: bidi-override; direction: rtl; font-size: clamp(85px, 1vw, 9px); font-family: "大正略字"; }</style>
-        </noscript>
-        <!-- ================ HEADER =============== -->
-        <header id="header">
-            <nav id="g-nav">
-              <ul>
-                <li><a href="#home" class="lang" language="ja">ホーム</a></li>
-                <li><a href="#intro" class="lang" language="ja">自己紹介</a></li>
-                <li><a href="#guidance" class="lang" language="ja">ご案内</a></li>
-                <li><a href="#faq" class="lang" language="ja">FAQ</a></li>
+  <link href="themes/plugins/sweetalert2/sweetalert2.min.css" rel="stylesheet">
+  <!-- =============== FAVICON =============== -->
+  <meta name="msapplication-square70x70logo" content="contents/favicon/site-tile-70x70.png">
+  <meta name="msapplication-square150x150logo" content="contents/favicon/site-tile-150x150.png">
+  <meta name="msapplication-wide310x150logo" content="contents/favicon/site-tile-310x150.png">
+  <meta name="msapplication-square310x310logo" content="contents/favicon/site-tile-310x310.png">
+  <meta name="msapplication-TileColor" content="#0078d7">
+  <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="contents/favicon/favicon.ico">
+  <link rel="icon" type="image/vnd.microsoft.icon" href="contents/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="contents/favicon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="contents/favicon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="contents/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="contents/favicon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="contents/favicon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="contents/favicon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="contents/favicon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="contents/favicon/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="contents/favicon/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="36x36" href="contents/favicon/android-chrome-36x36.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="contents/favicon/android-chrome-48x48.png">
+  <link rel="icon" type="image/png" sizes="72x72" href="contents/favicon/android-chrome-72x72.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="contents/favicon/android-chrome-96x96.png">
+  <link rel="icon" type="image/png" sizes="128x128" href="contents/favicon/android-chrome-128x128.png">
+  <link rel="icon" type="image/png" sizes="144x144" href="contents/favicon/android-chrome-144x144.png">
+  <link rel="icon" type="image/png" sizes="152x152" href="contents/favicon/android-chrome-152x152.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="contents/favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="256x256" href="contents/favicon/android-chrome-256x256.png">
+  <link rel="icon" type="image/png" sizes="384x384" href="contents/favicon/android-chrome-384x384.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="contents/favicon/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="36x36" href="contents/favicon/icon-36x36.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="contents/favicon/icon-48x48.png">
+  <link rel="icon" type="image/png" sizes="72x72" href="contents/favicon/icon-72x72.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="contents/favicon/icon-96x96.png">
+  <link rel="icon" type="image/png" sizes="128x128" href="contents/favicon/icon-128x128.png">
+  <link rel="icon" type="image/png" sizes="144x144" href="contents/favicon/icon-144x144.png">
+  <link rel="icon" type="image/png" sizes="152x152" href="contents/favicon/icon-152x152.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="contents/favicon/icon-160x160.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="contents/favicon/icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="196x196" href="contents/favicon/icon-196x196.png">
+  <link rel="icon" type="image/png" sizes="256x256" href="contents/favicon/icon-256x256.png">
+  <link rel="icon" type="image/png" sizes="384x384" href="contents/favicon/icon-384x384.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="contents/favicon/icon-512x512.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="contents/favicon/icon-16x16.png">
+  <link rel="icon" type="image/png" sizes="24x24" href="contents/favicon/icon-24x24.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="contents/favicon/icon-32x32.png">
+  <link rel="manifest" href="contents/favicon/manifest.json">
+  <!-- =============== SCRIPTS =============== -->
+  <script src="upup.min.js"></script>
+  <script src="themes/plugins/sweetalert2/sweetalert2.all.min.js"></script>
+  <script src="themes/plugins/jquery-3.7.1/jquery-3.7.1.js"></script>
+  <script src="themes/plugins/scrollgress/scrollgress.min.2.0.0.js"></script>
+  <script src="themes/plugins/scrollify-1.0.21/jquery.scrollify.min.js"></script>
+  <script src="themes/plugins/jquery-easing.1.4.1/jquery.easing.min.js"></script>
 
-                <li><a href="#home" class="lang" language="en">Home</a></li>
-                <li><a href="#intro" class="lang" language="en">Introduction</a></li>
-                <li><a href="#guidance" class="lang" language="en">Guidance</a></li>
-                <li><a href="#faq" class="lang" language="en">FAQ</a></li>
-              </ul>
-            </nav>
-        </header>
-        <!-- ================= MAIN ================ -->
-        <script>
-            UpUp.start({ 'content-url': 'offline.index.html', 'assets': ['themes/offline/main.css', 'themes/offline/main.js'] });
-        </script>
-        <main>
-            <section class="scroll-point" id="home" data-url="TOP">
-                <!-- <h1 class="h1-top"><span class="bgextend bgDUextendTrigger"><span class="bgappearTrigger">Test Web Site<br><a class="ip-address"></a></span></span></h1> -->
-                <h2>ホーム</h2>
-                <p>Hello, World!!</p>
-            </section>
-            <section class="scroll-point" id="intro" data-url="INTRO">
-                <h2>自己紹介</h2>
-                <p>developer</p>
-            </section>
-            <section class="scroll-point" id="guidance" data-url="GUIDANCE">
-                <h2>ご案内</h2>
-                <p>developer</p>
-            </section>
-            <section class="scroll-point" id="faq" data-url="FAQ">
-                <h2>FAQ</h2>
-                <p>developer</p>
-            </section>
-            <p id="page-top"><a href="">一番上に<br>戻る</a></p>
-        </main>
-        <!-- ================ FOOTER =============== -->
-        <footer id="footer">
-            <div class="container">
-              <div class="footer-left">
-                <ul>
-                  <li><a href="#">ホーム</a></li>
-                  <li><a href="#">プライバシーポリシー</a></li>
-                  <li><a href="#">ご利用にあたって</a></li>
-                  <li><a href="#">最新の情報</a></li>
-                </ul>
-              </div>
-              <div class="footer-center">
-                <ul>
-                  <li><a href="#">Minecraft Server</a></li>
-                  <li>
-                    <ul>
-                      <li><a href="#">別のサイト</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">ご意見</a></li>
-                </ul>
-              </div>
-              <div class="footer-right"></div>
-            <footer id="footer1">このすばらしい世界に祝福を！ </footer>
-          </footer>
-        <!-- ============== SCRIPT LOAD ============ -->
-         <script src="themes/script/after.js"></script>
-    </body>
+  <script src="themes/script/main.js" charset="utf-8"></script>
+  <script src="themes/script/text.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <!-- =============== NOSCRIPT ============== -->
+  <noscript>
+    <p id="nos-only">スデ稿瞀ガトプリクスバャジ蔚㡡</p>
+    <style>
+      #nos-only {
+        font-family: serif;
+        font-style: oblique;
+        background-color: yellow;
+        font-size: 30px;
+        font-variant: small-caps;
+      }
+    </style>
+    <div id="nos-ban">閲覧禁止<p id="true">今スグ有効ニスルベキ</p>
+    </div>
+    <style>
+      @font-face {
+        font-family: "大正略字";
+        src: local("contents/fonts/taisyoRyakuji.ttf") format("ttf");
+      }
+
+      #nos-ban {
+        font-family: "大正略字";
+        position: fixed;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        font-size: clamp(150px, 5vw, 10px);
+        color: rgb(207, 0, 0);
+      }
+
+      #true {
+        font-family: "大正略字";
+        position: top;
+        top: 50%;
+        right: 0;
+        transform: translateY(50%);
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        font-size: clamp(80px, 3vw, 8px);
+        color: rgb(187, 11, 11);
+      }
+    </style>
+    <p class="reverse">
+      ジャバスクリプトヲ有効ニシナケレバ<br>コノウェブサイトヲ閲覧サセル事ハデキマセン。<br>マタ、インターネットエクスプローラーデハ接続ハデキマセン。<br>問題アリマセン。<br>リダイレクトサレマス。</p>
+    <style>
+      .reverse {
+        unicode-bidi: bidi-override;
+        direction: rtl;
+        font-size: clamp(85px, 1vw, 9px);
+        font-family: "大正略字";
+      }
+    </style>
+  </noscript>
+  <!-- ================ HEADER =============== -->
+  <header id="header">
+    <nav id="g-nav">
+      <ul>
+        <li><a href="#home" class="lang" language="ja">ホーム</a></li>
+        <li><a href="#intro" class="lang" language="ja">自己紹介</a></li>
+        <li><a href="#guidance" class="lang" language="ja">ご案内</a></li>
+        <li><a href="#faq" class="lang" language="ja">FAQ</a></li>
+
+        <li><a href="#home" class="lang" language="en">Home</a></li>
+        <li><a href="#intro" class="lang" language="en">Introduction</a></li>
+        <li><a href="#guidance" class="lang" language="en">Guidance</a></li>
+        <li><a href="#faq" class="lang" language="en">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="openbtn">
+    <nav id="hamburgermenu">
+      <div id="g-nav-list">
+        <ul>
+          <li><a href="#">Top</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- ================= MAIN ================ -->
+  <script>
+    UpUp.start({ 'content-url': 'offline.index.html', 'assets': ['themes/offline/main.css', 'themes/offline/main.js'] });
+  </script>
+  <main>
+    <section class="scroll-point" id="home" data-url="TOP">
+      <!-- <h1 class="h1-top"><span class="bgextend bgDUextendTrigger"><span class="bgappearTrigger">Test Web Site<br><a class="ip-address"></a></span></span></h1> -->
+      <h2>ホーム</h2>
+      <p>Hello, World!!</p>
+    </section>
+    <section class="scroll-point" id="intro" data-url="INTRO">
+      <h2>自己紹介</h2>
+      <p>developer</p>
+    </section>
+    <section class="scroll-point" id="guidance" data-url="GUIDANCE">
+      <h2>ご案内</h2>
+      <p>developer</p>
+    </section>
+    <section class="scroll-point" id="faq" data-url="FAQ">
+      <h2>FAQ</h2>
+      <p>developer</p>
+    </section>
+    <p id="page-top"><a href="">一番上に<br>戻る</a></p>
+  </main>
+  <!-- ================ FOOTER =============== -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-left">
+        <ul>
+          <li><a href="#">ホーム</a></li>
+          <li><a href="#">プライバシーポリシー</a></li>
+          <li><a href="#">ご利用にあたって</a></li>
+          <li><a href="#">最新の情報</a></li>
+        </ul>
+      </div>
+      <div class="footer-center">
+        <ul>
+          <li><a href="#">Minecraft Server</a></li>
+          <li>
+            <ul>
+              <li><a href="#">別のサイト</a></li>
+            </ul>
+          </li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">ご意見</a></li>
+        </ul>
+      </div>
+      <div class="footer-right"></div>
+      <footer id="footer1">このすばらしい世界に祝福を！ </footer>
+  </footer>
+  <!-- ============== SCRIPT LOAD ============ -->
+  <script src="themes/script/after.js"></script>
+</body>
+
 </html>
