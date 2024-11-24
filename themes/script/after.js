@@ -43,6 +43,11 @@ $(function () {
 });
 /* temp */
 
+$(document).ready(function() {
+    // lang属性が"en"の要素をすべて非表示にする
+    $("*[language='en']").hide();
+});
+
 $(".openbtn").click(function () {//ボタンがクリックされたら
     $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
     $("#hamburgermenu").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
